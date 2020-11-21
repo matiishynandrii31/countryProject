@@ -4,6 +4,7 @@ import { getCountryFunc } from '../actions/country'
 import Country from '../components/Country/Country'
 
 
+
 const CountryContainer = ({ country, getCountryInfo }) => (
     <Country
         country={country}

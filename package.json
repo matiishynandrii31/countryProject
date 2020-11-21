@@ -13,7 +13,8 @@
     "redux": "^4.0.5",
     "web-vitals": "^0.2.4",
     "redux-logger": "*",
-    "redux-thunk": "*"
+    "redux-thunk": "*",
+    "uuid": "*"
   },
   "scripts": {
     "start": "react-scripts start",
