@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
-import { applyMiddleware, createStore, compose  } from 'redux';
-import { Provider } from 'react-redux';
-import { createLogger } from 'redux-logger';
+import {applyMiddleware, createStore, compose} from 'redux';
+import {Provider} from 'react-redux';
+import {createLogger} from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
+import {BrowserRouter as Router} from "react-router-dom";
 
-const middleware = [ thunk ];
+const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {
-  middleware.push(createLogger());
+    middleware.push(createLogger());
 }
 
 //REDUX-DEV-TOOLS
@@ -21,8 +22,10 @@ const store = createStore(reducer, composeEnhancers(
 ));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Router>
+            <App/>
+        </Router>
+    </Provider>,
+    document.getElementById('root')
 );

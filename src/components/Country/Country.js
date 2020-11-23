@@ -1,5 +1,6 @@
 import React from 'react';
 import "./country.css"
+import Header from "../Header/Header";
 
 
 class Counrty extends React.Component {
@@ -14,12 +15,10 @@ class Counrty extends React.Component {
             return (
                 this.props.country.country.data.map(item => {
                     return (
-                        <ul>
-                            <li key={item.name} className="list-item">
+                        <ul className="list">
+                            <li key={item.name} className="list-item" onClick={<Header keyff={"fffff"}/>}>
                                 <div>
                                     <h3>{item.name}</h3>
-                                </div>
-                                <div>
                                     <a href=""><img src={item.flag} alt=""/></a>
                                 </div>
                             </li>
@@ -36,13 +35,22 @@ class Counrty extends React.Component {
 
     render() {
         return (
-            <div className="header">
+            <div>
+                <div className="form">
+                    <h2>Search for a country</h2>
+                    <form className="country-search-form">
+                        <input type="text" className="form-control" id="search-box"
+                               placeholder="Enter country name" ng-model="searchTerm"/>
+                    </form>
+                </div>
+                <div>
+                    {this.showCountryList()}
+                </div>
                 {/*<button onClick={this.props.getCountryInfo}>CountryList</button>*/}
                 {/*{this.props.getCountryInfo()}*/}
-                {console.log(this.props.country.country.data)}
-                {this.showCountryList()}
+                {/*{console.log(this.props.country.country.data)}*/}
             </div>
-        )
+    )
     }
 }
 

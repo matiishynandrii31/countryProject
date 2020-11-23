@@ -14,7 +14,8 @@
     "web-vitals": "^0.2.4",
     "redux-logger": "*",
     "redux-thunk": "*",
-    "uuid": "*"
+    "uuid": "*",
+    "react-router-dom": "*"
   },
   "scripts": {
     "start": "react-scripts start",
