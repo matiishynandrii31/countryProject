@@ -1,6 +1,8 @@
 import React from 'react';
 import "./country.css"
 import Header from "../Header/Header";
+import SearchForm from "../SearchForm/SearchForm";
+import SearchingContainer from "../../containers/SearchingContainer";
 
 
 class Counrty extends React.Component {
@@ -36,19 +38,11 @@ class Counrty extends React.Component {
     render() {
         return (
             <div>
-                <div className="form">
-                    <h2>Search for a country</h2>
-                    <form className="country-search-form">
-                        <input type="text" className="form-control" id="search-box"
-                               placeholder="Enter country name" ng-model="searchTerm"/>
-                    </form>
-                </div>
+                <SearchingContainer/>
                 <div>
                     {this.showCountryList()}
                 </div>
-                {/*<button onClick={this.props.getCountryInfo}>CountryList</button>*/}
-                {/*{this.props.getCountryInfo()}*/}
-                {/*{console.log(this.props.country.country.data)}*/}
+
             </div>
     )
     }
