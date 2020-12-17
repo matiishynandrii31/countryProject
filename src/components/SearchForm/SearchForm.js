@@ -9,21 +9,17 @@ class SearchForm extends React.Component {
         this.searchCountry = this.searchCountry.bind(this);
     }
 
-    handleChange(e) {
-        let a = e.target.value
-        this.props.country.searchQuery(a)
-    }
 
     searchCountry(e) {
         e.preventDefault();
         const link = 'https://restcountries.eu/rest/v2/name/';
 
         if (this.props.country.searchUrl !== '') {
-            let newUrl = this.props.country.searchUrl;
+            let newLink = this.props.country.searchUrl;
 
-            newUrl = newUrl[0].toUpperCase() + newUrl.slice(1).toLowerCase();
-            newUrl = link + newUrl;
-            this.props.getSearchingCountryName(newUrl)
+            newLink = newLink[0].toUpperCase() + newLink.slice(1).toLowerCase();
+            newLink = link + newLink;
+            this.props.getSearchingCountryName(newLink)
         } else {
             let a = 'https://restcountries.eu/rest/v2/all';
 
@@ -31,6 +27,13 @@ class SearchForm extends React.Component {
             alert("You don't entering country name!!! Please, do it!")
         }
     }
+
+    handleChange(e) {
+        let searchQueryText = e.target.value
+        this.props.searchQuery(searchQueryText)
+
+    }
+
 
     render() {
         return (

@@ -24,7 +24,7 @@ import {getCountryInfo} from "../api/rest";
 //         })
 // };
 
-export function searchQueryFunc(data){
+export function searchQueryFunc(data) {
     return{ type: SEARCH_QUERY_TEXT, payload: data}
 }
 let getSearchingCountry = (data) => fetch(data)

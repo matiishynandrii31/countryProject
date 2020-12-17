@@ -1,15 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { searchQueryFunc, getSearchingCountryNameFunc } from '../actions/country'
-import SearchForm from "../components/SearchForm/SearchForm";
+import { getSearchingCountryNameFunc } from '../actions/country';
+import CounrtyItem from "../components/CountryItem/CountryItem";
 
 
-
-const SearchingContainer = ({ country, searchQuery, getSearchingCountryName }) => (
-    <SearchForm
+const ItemContainer = ({ country,getSearchingCountryName, match}) => (
+    <CounrtyItem
         country={country}
-        searchQuery={searchQuery}
         getSearchingCountryName={getSearchingCountryName}
+        match={match}
     />
 )
 
@@ -19,7 +18,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => {
     return {
-        searchQuery: (data) => dispatch(searchQueryFunc(data)),
         getSearchingCountryName: (data) => dispatch(getSearchingCountryNameFunc(data))
     }
 }
@@ -27,4 +25,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(SearchingContainer)
+)(ItemContainer)

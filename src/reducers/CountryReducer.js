@@ -66,8 +66,8 @@ const countryReducer = (state = initialState, action) => {
                 country: {
                     isLoading: false,
                     error: false,
-                    data: false,
-                    searchData: action.payload
+                    data: action.payload,
+                    searchData: false
                 }
             }
         case SEARCH_QUERY_FAIL:
