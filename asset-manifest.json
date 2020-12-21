@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/countryProject/static/css/main.dbcd481e.chunk.css",
+    "main.js": "/countryProject/static/js/main.ad271c7c.chunk.js",
+    "main.js.map": "/countryProject/static/js/main.ad271c7c.chunk.js.map",
+    "runtime-main.js": "/countryProject/static/js/runtime-main.9c4db421.js",
+    "runtime-main.js.map": "/countryProject/static/js/runtime-main.9c4db421.js.map",
+    "static/js/2.113666ca.chunk.js": "/countryProject/static/js/2.113666ca.chunk.js",
+    "static/js/2.113666ca.chunk.js.map": "/countryProject/static/js/2.113666ca.chunk.js.map",
+    "index.html": "/countryProject/index.html",
+    "static/css/main.dbcd481e.chunk.css.map": "/countryProject/static/css/main.dbcd481e.chunk.css.map",
+    "static/js/2.113666ca.chunk.js.LICENSE.txt": "/countryProject/static/js/2.113666ca.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/countryProject/static/media/map_world.2c4336df.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c4db421.js",
+    "static/js/2.113666ca.chunk.js",
+    "static/css/main.dbcd481e.chunk.css",
+    "static/js/main.ad271c7c.chunk.js"
+  ]
+}
