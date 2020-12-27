@@ -37,16 +37,18 @@ class SearchForm extends React.Component {
 
     render() {
         return (
-            <div className="form">
-                <h2>Search for a country</h2>
+            <div className="form col-md-10">
+                {/*<h2>Search for a country</h2>*/}
                 <form className="country-search-form" onSubmit={this.searchCountry}>
-                    <input className="form-input" onChange={this.handleChange} value={this.props.country.searchUrl}
+                    <input className="form-input form-control" onChange={this.handleChange}
+                           value={this.props.country.searchUrl}
                            type="text" placeholder='Enter name of country'/>
-                    <button className='form-btn'>Search</button>
+                    <button className='form-btn'>SEARCH</button>
                 </form>
             </div>
-        )
-    }
-}
 
-export default SearchForm;
+    )
+    }
+    }
+
+    export default SearchForm;

@@ -76,7 +76,7 @@ const countryReducer = (state = initialState, action) => {
                 country: {
                     isLoading: false,
                     error: action.payload,
-                    data: false,
+                    data: true,
                     searchData: false
                 }
             }

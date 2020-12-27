@@ -9,20 +9,6 @@ import {
 } from '../constants/constants';
 import {getCountryInfo} from "../api/rest";
 
-// const getCountry = (dispatch) => {
-//     dispatch({type: GET_POSTS_BY_REQUEST});
-//     fetch('https://restcountries.eu/rest/v2/all')
-//         .then(res => res.json())
-//         .then(res => {
-//             if (res.error) {
-//                 dispatch({type: GET_POSTS_BY_FAIL, payload: res.error});
-//             }
-//             dispatch({type: GET_POSTS_BY_SUCCESS, payload: res});
-//         })
-//         .catch(error => {
-//             dispatch({type: GET_POSTS_BY_FAIL, payload: error});
-//         })
-// };
 
 export function searchQueryFunc(data) {
     return{ type: SEARCH_QUERY_TEXT, payload: data}

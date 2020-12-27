@@ -4,12 +4,14 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div>
+        <header>
             <div className="navbar">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/list">Country List</NavLink>
+                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/list">COUNTRY LIST</NavLink>
+                {/*<NavLink to="/regionalBlocs">REGIONAL BLOC</NavLink>*/}
             </div>
-        </div>
-    )}
+        </header>
+    )
+}
 
 export default Navbar;

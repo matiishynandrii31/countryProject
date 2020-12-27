@@ -1,6 +1,6 @@
 import React from 'react';
 import "./country.css"
-import Header from "../Header/Header";
+import HomePage from "../HomePage/HomePage";
 import SearchingContainer from "../../containers/SearchingContainer";
 import { Link } from "react-router-dom";
 
@@ -13,23 +13,30 @@ class Counrty extends React.Component {
 
 
     showCountryList() {
-        if (this.props.country.country.data || this.props.searchUrl === '') {
+        if ( this.props.country.country.data ) {
             return (
                 this.props.country.country.data.map(item => {
                     return (
-                        <ul className="list">
-                            <li key={item.name} className="list-item" onClick={<Header keyff={"fffff"}/>}>
+                        <div className="list-item">
                                 <Link to={{pathname: `/list/${item.name}`}} params={{item: item}}
                                       className='linkToCountry'>
                                     <div>
                                         <h3>{item.name}</h3>
                                         <a href=""><img src={item.flag} alt=""/></a>
+                                        <p className="region-info">{item.region}</p>
                                     </div>
+
                                 </Link>
-                            </li>
-                        </ul>
+                        </div>
                     )
                 })
+            )
+        }
+        else if (this.props.country.country.error) {
+            return (
+                <div>
+                    <p>No result</p>
+                </div>
             )
         }
     }
@@ -40,9 +47,9 @@ class Counrty extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="country-list-block">
                 <SearchingContainer/>
-                <div>
+                <div className='list'>
                     {this.showCountryList()}
                 </div>
 
