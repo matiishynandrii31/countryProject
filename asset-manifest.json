@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/countryProject/static/css/main.c02401c5.chunk.css",
-    "main.js": "/countryProject/static/js/main.4d09e2b4.chunk.js",
-    "main.js.map": "/countryProject/static/js/main.4d09e2b4.chunk.js.map",
+    "main.css": "/countryProject/static/css/main.6e08de9f.chunk.css",
+    "main.js": "/countryProject/static/js/main.b9da85a9.chunk.js",
+    "main.js.map": "/countryProject/static/js/main.b9da85a9.chunk.js.map",
     "runtime-main.js": "/countryProject/static/js/runtime-main.9c4db421.js",
     "runtime-main.js.map": "/countryProject/static/js/runtime-main.9c4db421.js.map",
     "static/js/2.23029cc6.chunk.js": "/countryProject/static/js/2.23029cc6.chunk.js",
     "static/js/2.23029cc6.chunk.js.map": "/countryProject/static/js/2.23029cc6.chunk.js.map",
     "index.html": "/countryProject/index.html",
-    "static/css/main.c02401c5.chunk.css.map": "/countryProject/static/css/main.c02401c5.chunk.css.map",
+    "static/css/main.6e08de9f.chunk.css.map": "/countryProject/static/css/main.6e08de9f.chunk.css.map",
     "static/js/2.23029cc6.chunk.js.LICENSE.txt": "/countryProject/static/js/2.23029cc6.chunk.js.LICENSE.txt",
     "static/media/App.css": "/countryProject/static/media/map_world.2c4336df.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9c4db421.js",
     "static/js/2.23029cc6.chunk.js",
-    "static/css/main.c02401c5.chunk.css",
-    "static/js/main.4d09e2b4.chunk.js"
+    "static/css/main.6e08de9f.chunk.css",
+    "static/js/main.b9da85a9.chunk.js"
   ]
 }
