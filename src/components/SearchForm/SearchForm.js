@@ -37,7 +37,7 @@ class SearchForm extends React.Component {
 
     render() {
         return (
-            <div className="form col-md-10">
+            <div className="form col-md-12">
                 {/*<h2>Search for a country</h2>*/}
                 <form className="country-search-form" onSubmit={this.searchCountry}>
                     <input className="form-input form-control" onChange={this.handleChange}
